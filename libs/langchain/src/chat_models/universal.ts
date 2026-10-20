@@ -169,6 +169,10 @@ export const MODEL_PROVIDER_CONFIG = {
     package: "@langchain/perplexity",
     className: "ChatPerplexity",
   },
+  runware: {
+    package: "@langchain/runware",
+    className: "ChatRunware",
+  },
 } as const;
 
 const SUPPORTED_PROVIDERS = Object.keys(
@@ -890,6 +894,7 @@ export async function initChatModel<
  *   - cerebras (@langchain/cerebras)
  *   - deepseek (@langchain/deepseek)
  *   - xai (@langchain/xai)
+ *   - runware (@langchain/runware)
  * @param {string[] | "any"} [fields.configurableFields] - Which model parameters are configurable:
  *   - undefined: No configurable fields.
  *   - "any": All fields are configurable. (See Security Note in description)
