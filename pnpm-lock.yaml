@@ -2312,6 +2312,43 @@ importers:
         specifier: ^3.25.76 || ^4
         version: 4.3.6
 
+  libs/providers/langchain-runware:
+    dependencies:
+      '@langchain/openai':
+        specifier: workspace:*
+        version: link:../langchain-openai
+    devDependencies:
+      '@langchain/build':
+        specifier: workspace:*
+        version: link:../../../internal/build
+      '@langchain/core':
+        specifier: workspace:^
+        version: link:../../langchain-core
+      '@langchain/standard-tests':
+        specifier: workspace:*
+        version: link:../../../internal/standard-tests
+      '@langchain/tsconfig':
+        specifier: workspace:*
+        version: link:../../../internal/tsconfig
+      '@tsconfig/recommended':
+        specifier: ^1.0.3
+        version: 1.0.13
+      '@vitest/coverage-v8':
+        specifier: ^5.0.2
+        version: 5.0.3(vitest@5.0.3)
+      dotenv:
+        specifier: ^17.4.2
+        version: 17.4.2
+      dpdm:
+        specifier: ^4.3.0
+        version: 4.3.0
+      typescript:
+        specifier: ~7.0.2
+        version: 7.0.2
+      vitest:
+        specifier: ^5.0.2
+        version: 5.0.3(@opentelemetry/api@1.9.1)(@types/node@26.6.3)(@vitest/coverage-v8@5.0.3)(vite@7.3.5(@types/node@26.6.3)(jiti@2.7.0)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1))
+
   libs/providers/langchain-typesafe:
     dependencies:
       zod:
